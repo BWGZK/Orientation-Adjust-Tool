@@ -3,7 +3,7 @@
 ### Task Description:
 Due to different data sources and scanning habits, the orientation of different cardiac magnetic resonance images may be different, and the orientation matrix corresponding to the image itself may not correspond correctly. This may cause problems in tasks such as image segmentation or registration.  
 
-Taking a 2D image as an example, we set the orientation of an image as the initial image, and set the four corners of the image to (1, 2, 3, 4) 
+Taking a 2D image as an example, we set the orientation of an image as the initial image, and set the four corners of the image to (1, 2, 3, 4),Then the orientation of the 2D MR image may have the following 8 variations.
 | No | Operation | Representation | Description|
 |:----:|:----:|:----:|:----:|
 | 000 | initial state |(1,2,3,4)|Target[x,y,z]=Source[x,y,z]|
