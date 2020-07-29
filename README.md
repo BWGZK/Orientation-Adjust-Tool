@@ -3,8 +3,18 @@
 ### Task Description:
 Due to different data sources and scanning habits, the orientation of different cardiac magnetic resonance images may be different, and the orientation matrix corresponding to the image itself may not correspond correctly. This may cause problems in tasks such as image segmentation or registration.  
 
-Taking a 2D image as an example, we set the orientation of an image as the initial image, and set the four corners of the image to (1, 2, 3, 4) (as shown in 2D Views):
-![UI Interface](./data/instruction.png,width="300" height="600")
+Taking a 2D image as an example, we set the orientation of an image as the initial image, and set the four corners of the image to (1, 2, 3, 4) 
+| No | Operation | Representation | Description|
+|:----:|:----:|:----:|:----:|
+| 000 | initial state |(1,2,3,4)|Target[x,y,z]=Source[x,y,z]|
+| 001 | horizontal flip |(2,1,4,3)|Target[x,y,z]=Source[sx-x,y,z]|
+| 010 | vertical flip |(3,4,1,2)|Target[x,y,z]=Source[x,sy-y,z]|
+| 011 | Rotate 180° clockwise |(4,3,2,1)|Target[x,y,z]=Source[sx-x,sy-y,z]|
+| 100 |Flip along the upper left-lower right corner |(1,3,2,4)|Target[x,y,z]=Source[y,x,z]|
+| 101 |Rotate 90° clockwise|(3,1,4,2)|Target[x,y,z]=Source[sx-y,x,z]|
+| 110 |Rotate 270° clockwise|(2,4,1,3)|Target[x,y,z]=Source[y,sy-x,z]|
+| 110 |Flip along the bottom left-top right corner|(4,2,3,1)|Target[x,y,z]=Source[sx-y,sy-x,z]|
+
 
 We designed the DNN network, input the heart magnetic resonance image of the scrambled orientation, and output the number corresponding to the magnetic resonance image (classification problem, divided into 8 mutually exclusive categories). Finally, we embedded the network into the UI interface and command line tools to form the Cardiac MRI Orientation Adjust Tool.
 
