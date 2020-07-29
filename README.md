@@ -4,7 +4,7 @@
 Due to different data sources and scanning habits, the orientation of different cardiac magnetic resonance images may be different, and the orientation matrix corresponding to the image itself may not correspond correctly. This may cause problems in tasks such as image segmentation or registration.  
 
 Taking a 2D image as an example, we set the orientation of an image as the initial image, and set the four corners of the image to (1, 2, 3, 4) (as shown in 2D Views):
-![UI Interface](./data/instruction.png)
+![UI Interface](./data/instruction.png,width="300" height="600")
 
 We designed the DNN network, input the heart magnetic resonance image of the scrambled orientation, and output the number corresponding to the magnetic resonance image (classification problem, divided into 8 mutually exclusive categories). Finally, we embedded the network into the UI interface and command line tools to form the Cardiac MRI Orientation Adjust Tool.
 
