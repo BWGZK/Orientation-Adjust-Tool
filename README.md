@@ -1,37 +1,25 @@
-## Welcome to GitHub Pages
+## Cardiac MRI Orientation Adjust Tool
 
-You can use the [editor on GitHub](https://github.com/BWGZK/Cardiac-MR-Images-Orientation-Adjust-Tool/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### UI interface
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![UI interface](https://github.com/BWGZK/Orientation-Adjust-Tool/blob/master/data/cover.png)
 
-### Markdown
+### Command Line Tool
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+to test folder batch processing, just type: python command.py folder_path -f   
+to test single file, type: python command.py file_path  
+----
+usage: command.py [-h] [-k [KEEP_HEADER]] [-f [BATCH_PROCESS]]
+                  [-o [SAVE_PATH]] [-c [{C0,T2,LGE}]]
+                  file_path
 
-```markdown
-Syntax highlighted code block
+file_path: the input file path (Required)
+KEEP_HEADER[-k]:  don't ajust the header orientation(Optional)
+BATCH_PROCESS[-f]:  process all files by search the folder(*.mha, *.nii,*.nii.gz are supported) (Optional)
+SAVE_PATH[-o]: specify the save path of adjusted file(Optional)
+TYPE[-c]: specify the type of adjusted file(Optional, [C0,T2,LGE are supported])
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/BWGZK/Cardiac-MR-Images-Orientation-Adjust-Tool/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Citation
+Please cite these two works, based on which we trained our DNN models, when you use the tool:  
+[1] Xiahai Zhuang: Multivariate mixture model for myocardial segmentation combining multi-source images. IEEE Transactions on Pattern Analysis and Machine Intelligence (T PAMI), vol. 41, no. 12, 2933-2946, Dec 2019.   
+[2] Xiahai Zhuang: Multivariate mixture model for cardiac segmentation from multi-sequence MRI.  International Conference on Medical Image Computing and Computer-Assisted Intervention, pp.581-588, 2016. 
