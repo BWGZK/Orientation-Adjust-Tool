@@ -2,7 +2,7 @@
 
 ### UI interface
 
-![UI Interface](./data/cover.png)
+![UI Interface](./data/demo.jpg)
 
 
 ### Command Line Tool
