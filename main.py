@@ -41,7 +41,8 @@ class Ui_MainWindow(QMainWindow):
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout.setObjectName("verticalLayout")
         self.label = QLabel(self.verticalLayoutWidget)
-        self.label.setPixmap(QPixmap.fromImage(QImage(resource_path('./data/cover.png'))))
+        size = QSize(680, 420)
+        self.label.setPixmap(QPixmap.fromImage(QImage(resource_path('./data/cover.png')).scaled(size, Qt.IgnoreAspectRatio)))
         self.verticalLayout.addWidget(self.label)
 
         self.verticalLayoutWidget_8 = QWidget(self.centralwidget)
@@ -78,11 +79,18 @@ class Ui_MainWindow(QMainWindow):
         self.verticalLayout_3.setObjectName("verticalLayout_3")
 
         self.verticalLayoutWidget_tag = QWidget(self.centralwidget)
-        self.verticalLayoutWidget_tag.setGeometry(QRect(250, 830, 600, 50))
+        self.verticalLayoutWidget_tag.setGeometry(QRect(250, 820, 600, 50))
         self.verticalLayoutWidget_tag.setObjectName("verticalLayoutWidget_tag")
         self.verticalLayout_tag = QVBoxLayout(self.verticalLayoutWidget_tag)
         self.verticalLayout_tag.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_tag.setObjectName("verticalLayout_tag")
+        self.tag_Label = QLabel(self)
+        self.tag_Label.setFont(QFont("Microsoft YaHei", 10, QFont.Bold))
+        self.tag_Label.setStyleSheet("color:#8a8e8f")
+        self.tag_Label.setObjectName("")
+        self.tag_Label.setText("By Zhang, Ke @ ZMIC.Fudan University")
+        self.tag_Label.setFixedSize(600, 50)
+        self.verticalLayout_tag.addWidget(self.tag_Label)
 
 
         self.verticalLayoutWidget_4 = QWidget(self.centralwidget)
@@ -180,13 +188,6 @@ class Ui_MainWindow(QMainWindow):
         self.NoSlices.setObjectName("NoSlices")
         self.NoSlices.setFixedSize(100, 64)
         self.verticalLayout_NoSlices.addWidget(self.NoSlices)
-
-        self.tag = QLabel("By Zhang,Ke @ ZMIC Fudan University")
-        self.tag.setFont(QFont("Microsoft YaHei", 10, QFont.Bold))
-        self.tag.setStyleSheet("color:#8a8e8f")
-        self.tag.setObjectName("tag")
-        self.tag.setFixedSize(600, 50)
-        self.verticalLayout_tag.addWidget(self.tag)
 
         self.lineEdit = QLineEdit(self.centralwidget)
         self.lineEdit.setGeometry(QRect(495, 67, 30, 30))
