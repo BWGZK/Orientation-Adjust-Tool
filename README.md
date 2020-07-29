@@ -2,22 +2,33 @@
 
 ### UI interface
 
-![UI interface](https://github.com/BWGZK/Orientation-Adjust-Tool/blob/master/data/cover.png)
+![UI Interface](./data/cover.png)
+
 
 ### Command Line Tool
 
 to test folder batch processing, just type: python command.py folder_path -f   
-to test single file, type: python command.py file_path  
-----
-usage: command.py [-h] [-k [KEEP_HEADER]] [-f [BATCH_PROCESS]]
-                  [-o [SAVE_PATH]] [-c [{C0,T2,LGE}]]
-                  file_path
 
-file_path: the input file path (Required)
-KEEP_HEADER[-k]:  don't ajust the header orientation(Optional)
-BATCH_PROCESS[-f]:  process all files by search the folder(*.mha, *.nii,*.nii.gz are supported) (Optional)
-SAVE_PATH[-o]: specify the save path of adjusted file(Optional)
-TYPE[-c]: specify the type of adjusted file(Optional, [C0,T2,LGE are supported])
+to test single file, type: python command.py file_path  
+
+
+usage: command.py file_path
+[-h] 
+[-k [KEEP_HEADER]] 
+[-f [BATCH_PROCESS]]
+[-o [SAVE_PATH]] 
+[-c [{C0,T2,LGE}]]
+
+
+file_path: the input file path (Required)  
+
+KEEP_HEADER[-k]:  don't ajust the header orientation(Optional)  
+
+BATCH_PROCESS[-f]:  process all files by search the folder(*.mha, *.nii,*.nii.gz are supported) (Optional)  
+
+SAVE_PATH[-o]: specify the save path of adjusted file(Optional)  
+
+TYPE[-c]: specify the type of adjusted file(Optional, [C0,T2,LGE are supported])  
 
 ### Citation
 Please cite these two works, based on which we trained our DNN models, when you use the tool:  
