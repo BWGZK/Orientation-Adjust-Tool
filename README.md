@@ -7,18 +7,23 @@
 
 ### Command Line Tool
 
-to test folder batch processing, just type: python command.py folder_path -f   
+to test folder batch processing, just type:
+```
+python command.py folder_path -f   
+```
+to test single file, type: 
+```
+python command.py file_path  
+```
 
-to test single file, type: python command.py file_path  
-
-
+```
 usage: command.py file_path
 [-h] 
 [-k [KEEP_HEADER]] 
 [-f [BATCH_PROCESS]]
 [-o [SAVE_PATH]] 
 [-c [{C0,T2,LGE}]]
-
+```
 
 file_path: the input file path (Required)  
 
