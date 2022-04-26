@@ -57,5 +57,7 @@ TYPE[-c]: specify the type of adjusted file(Optional, [C0,T2,LGE are supported])
 ### Citation
 Please cite these two works, based on which we trained our DNN models, when you use the tool:  
 [1] Xiahai Zhuang: Multivariate mixture model for myocardial segmentation combining multi-source images. IEEE Transactions on Pattern Analysis and Machine Intelligence (T PAMI), vol. 41, no. 12, 2933-2946, Dec 2019.   
+
 [2] Xiahai Zhuang: Multivariate mixture model for cardiac segmentation from multi-sequence MRI.  International Conference on Medical Image Computing and Computer-Assisted Intervention, pp.581-588, 2016. 
+
 [3] Zhang, K., Zhuang, X. (2020). Recognition and Standardization of Cardiac MRI Orientation via Multi-tasking Learning and Deep Neural Networks. In: Zhuang, X., Li, L. (eds) Myocardial Pathology Segmentation Combining Multi-Sequence Cardiac Magnetic Resonance Images. MyoPS 2020. Lecture Notes in Computer Science(), vol 12554. Springer, Cham. https://doi.org/10.1007/978-3-030-65651-5_16
