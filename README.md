@@ -16,7 +16,7 @@ Taking a 2D image as an example, we set the orientation of an image as the initi
 | 110 |Flip along the bottom left-top right corner|(4,2,3,1)|Target[x,y,z]=Source[sx-y,sy-x,z]|
 
 
-We designed the DNN network, input the heart magnetic resonance image of the scrambled orientation, and output the number corresponding to the magnetic resonance image (classification problem, divided into 8 mutually exclusive categories). Finally, we embedded the network into the UI interface and command line tools to form the Cardiac MRI Orientation Adjust Tool. The model is trained and tested on the [MSCMRseg](https://zmiclab.github.io/zxh/0/mscmrseg19/data.html)
+We designed the DNN network, input the heart magnetic resonance image of the scrambled orientation, and output the number corresponding to the magnetic resonance image (classification problem, divided into 8 mutually exclusive categories). Finally, we embedded the network into the UI interface and command line tools to form the Cardiac MRI Orientation Adjust Tool. The model is trained and tested on the [MSCMRseg](https://zmiclab.github.io/zxh/0/mscmrseg19/data.html) dataset.
 
 ### UI interface
 
