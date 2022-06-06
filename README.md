@@ -55,6 +55,8 @@ SAVE_PATH[-o]: specify the save path of adjusted file(Optional)
 TYPE[-c]: specify the type of adjusted file(Optional, [C0,T2,LGE are supported])  
 
 ### Training
+For the orienation classification model, the loss curves of CO, T2, and LGE modalities are shown as:
+![train process](./train_plots.png)
 The classification is trained with the follow command:
 ```
 python train.py
