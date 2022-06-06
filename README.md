@@ -54,6 +54,13 @@ SAVE_PATH[-o]: specify the save path of adjusted file(Optional)
 
 TYPE[-c]: specify the type of adjusted file(Optional, [C0,T2,LGE are supported])  
 
+### Training
+The classification is trained with the follow command:
+```
+python train.py
+```
+Thanks Tao Hong for the update of train.py!
+
 ### Citation
 Please cite these two works, based on which we trained our DNN models, when you use the tool:  
 [1] Xiahai Zhuang: Multivariate mixture model for myocardial segmentation combining multi-source images. IEEE Transactions on Pattern Analysis and Machine Intelligence (T PAMI), vol. 41, no. 12, 2933-2946, Dec 2019.   
